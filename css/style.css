@@ -1,0 +1,57 @@
+
+:root
+{
+    --bs-font-sans-serif: Roboto, "Helvetica Neue", Arial, 'Noto Sans CJK', "Segoe UI", normal Arial, Helvetica, 'sans-serif';
+    color-scheme: dark;
+}
+
+body
+{
+    background-color: rgb(37, 37, 37);
+}
+
+.title
+{
+    color: rgb(218, 218, 218);
+}
+
+.navbar
+{
+    background-color: rgb(40, 40, 40) !important;
+}
+
+.main-control
+{
+    color: white;
+    background-color: rgb(31, 31, 31);
+}
+
+.switch-title
+{
+    color: rgb(109, 109, 109);
+    font-size: small;
+}
+
+.switch-content
+{
+    color: rgb(168, 168, 168);
+    font-size: smaller;
+}
+
+.switch-bt
+{
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.switch-bt:hover {
+    transform: scale(1.01);
+}
+
+.card {
+    background-color: rgb(41, 41, 41);
+}
+
+.vjs-control-bar { font-size: 130% }
