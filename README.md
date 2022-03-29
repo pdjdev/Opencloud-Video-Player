@@ -5,7 +5,7 @@
 
 video.js, php Based Web Video Player (for Opencloud)  
 오픈클라우드 전용 웹 비디오 플레이어
-### [데모 링크](https://demo.pbj.kr/opencloud-video-player)
+### [데모 링크](https://demo.pbj.kr/opencloud)
 
 ## 사용방법
 ```html
