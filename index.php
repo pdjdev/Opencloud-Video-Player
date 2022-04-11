@@ -85,15 +85,18 @@ $currdir = mb_substr($path_parts['dirname'],  mb_strlen($startloc, 'utf-8'), NUL
 # ====================== DB(SQL)을 사용하지 않는 경우 아래 코드를 지워주세요 ======================
 # 비디오가 등록되어 있지 않은 경우
 if (mysqli_num_rows($query) < 1) {
-    $chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-    $var_size = strlen($chars);
-    $vidid = '';
-    for( $x = 0; $x < 6; $x++ ) { 
-        $vidid .= $chars[ rand( 0, $var_size - 1 ) ]; 
-    }
     
     while(1) {
-        # 우선 중복체크
+
+        # id생성
+        $chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+        $var_size = strlen($chars);
+        $vidid = '';
+        for( $x = 0; $x < 6; $x++ ) { 
+            $vidid .= $chars[ rand( 0, $var_size - 1 ) ]; 
+        }
+
+        # 중복체크
         $id_check = mysqli_query($conn, "SELECT id FROM videos WHERE id = '$vidid'");
         if (mysqli_num_rows($id_check) < 1) {
             break;
